@@ -23,39 +23,39 @@ public class Doctores implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_doctor")
-	private int ideCita;
+	private int ideDoc;
 
 	@Column(name = "nom_doctor")
-	private String numCita;
+	private String nomDoc;
 
 	@Column(name = "especialidad_doctor")
-	private String fecCita;
+	private String espDoc;
 
 	@OneToMany(mappedBy = "c_doctores")
 	List<Citas> citas = new ArrayList<Citas>();
 
-	public int getIdeCita() {
-		return ideCita;
+	public int getIdeDoc() {
+		return ideDoc;
 	}
 
-	public void setIdeCita(int ideCita) {
-		this.ideCita = ideCita;
+	public void setIdeDoc(int ideDoc) {
+		this.ideDoc = ideDoc;
 	}
 
-	public String getNumCita() {
-		return numCita;
+	public String getNomDoc() {
+		return nomDoc;
 	}
 
-	public void setNumCita(String numCita) {
-		this.numCita = numCita;
+	public void setNomDoc(String nomDoc) {
+		this.nomDoc = nomDoc;
 	}
 
-	public String getFecCita() {
-		return fecCita;
+	public String getEspDoc() {
+		return espDoc;
 	}
 
-	public void setFecCita(String fecCita) {
-		this.fecCita = fecCita;
+	public void setEspDoc(String espDoc) {
+		this.espDoc = espDoc;
 	}
 
 	public List<Citas> getCitas() {

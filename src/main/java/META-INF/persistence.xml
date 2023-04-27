@@ -9,7 +9,7 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<properties>
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/bd_notas?useUnicode=true&amp;useJDBCCompl
+				value="jdbc:mysql://localhost:3306/CL_QUISPEIMATA?useUnicode=true&amp;useJDBCCompl
 iantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC
 " />
 			<property name="javax.persistence.jdbc.user" value="root" />
